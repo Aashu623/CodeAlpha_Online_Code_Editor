@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2a67444176.js" crossorigin="anonymous"></script>
+    <title>Online code editor</title>
+</head>
+
+<body>
+    <nav id="navbar"> Welcome to the code editor</nav>
+    <div class="container">
+        <div class="up">
+            <div class="input-area">
+                <label> <i class="fa-brands fa-html5"></i>HTML</label>
+                <textarea placeholder="Write your HTML code here" cols="30" rows="25" id="html"
+                    onkeyup="run()"></textarea>
+            </div>
+
+            <div class="input-area">
+                <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+                <textarea placeholder="Write your CSS code here" cols="30" rows="25" id="css"
+                    onkeyup="run()"></textarea>
+            </div>
+
+            <div class="input-area">
+                <label><i class="fa-brands fa-js"></i>JAVASCRIPT</label>
+                <textarea placeholder="Write your JAVASCRIPT code here" cols="30" rows="25" id="js"
+                    onkeyup="run()"></textarea>
+            </div>
+        </div>
+        <div class="down">
+            <label><i class="fa-solid fa-play"></i>OUTPUT</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
